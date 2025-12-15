@@ -37,3 +37,76 @@ color: blue;
 height: 50px;
 display: block;
  }
+.menú{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+ .lista-menú{
+   list-style: none;
+   display: flex;
+   gap: 15px;
+ }
+ .lista-menú li a{
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+ }
+ .lista-menú li a:hover{
+   color: rgb(237, 161, 161);
+ }
+ .banner{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+   margin: 0;
+ }
+ .banner img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 1;
+ }
+ .banner::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   background-color: #403a48;
+   z-index: 2;
+ }
+ .contenedor-banner{
+   max-width: 1200px;
+   margin: 0 auto;
+   position: relative;
+   z-index: 3;
+   text-align: center;
+ }
+ .contenedor-banner h1{
+   color: rgb(108, 213, 108);
+   font-size: 40px
+ }
+ .contenedor-banner p{
+   color: aliceblue;
+   font-size: 25px;
+ }
+ .btn-principal{
+   background-color: aquamarine;
+   color: black;
+   padding: 15px 30px;
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ .btn-principal:hover{
+   background-color: aliceblue;
+   color: rgb(5, 74, 51);
+ }
